@@ -129,5 +129,4 @@ To demonstrate the functionality of this service:
 To access the codebase, ensure you have cloned the repository as mentioned in the setup instructions. You can view and modify the code using any C# IDE, such as Visual Studio.
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+Unknown
