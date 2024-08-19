@@ -109,25 +109,6 @@ The **Patient Registration Service** is a RESTful API built using ASP.NET Core. 
 - **Response**: Returns `204 No Content` if the patient is successfully deleted. If the patient has been diagnosed, it returns a `400 Bad Request` with an appropriate error message.
 
 ## Validation and Error Handling
-
-### Custom Enum Validation
-
-The `Diagnosis` field in the patient registration process must be one of the predefined values in the `AdmittingDiagnosis` enum. To enforce this, a custom action filter (`ValidateDiagnosisAttribute`) is applied to the `RegisterPatient` action.
-
-If an invalid `Diagnosis` value is provided, the API responds with a `400 Bad Request` and a detailed error message:
-```json
-{
-    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
-    "title": "One or more validation errors occurred.",
-    "status": 400,
-    "errors": {
-        "Diagnosis": [
-            "The value 'InvalidDiagnosis' is not valid for AdmittingDiagnosis."
-        ]
-    }
-}
-```
-
 ### Centralized Exception Handling
 
 The application uses a custom middleware (`ExceptionHandlingMiddleware`) to handle exceptions globally. This ensures that all exceptions are logged and the user receives a consistent error response.
