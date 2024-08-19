@@ -25,7 +25,7 @@ The **Patient Registration Service** is a RESTful API built using ASP.NET Core. 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/patient-registration-service.git
+   git clone https://github.com/DimitarAtanassov/patient-registration-service.git
    ```
 
 2. Navigate to the project directory:
@@ -121,8 +121,7 @@ To demonstrate the functionality of this service:
 
 1. Use the provided API endpoints to create, update, and delete patients.
 2. Utilize Postman or any similar tool to manually test each endpoint.
-3. Review the custom error handling by sending requests with invalid data (e.g., invalid `Diagnosis` values).
-4. Access the codebase to understand the implementation details of the service.
+3. Access the codebase to understand the implementation details of the service.
 
 ### Code Access
 
