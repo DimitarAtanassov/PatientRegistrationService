@@ -30,7 +30,7 @@ The **Patient Registration Service** is a RESTful API built using ASP.NET Core. 
 
 2. Navigate to the project directory:
    ```sh
-   cd patient-registration-service
+   cd PatientRegistrationService
    ```
 
 3. Restore the required NuGet packages:
